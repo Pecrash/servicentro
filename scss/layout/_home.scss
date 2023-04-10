@@ -1,0 +1,436 @@
+@use "../abstracts/breakpoints" as *;
+
+@include media-down(desktop) {
+	.welcome {
+		display: flex;
+		width: 100%;
+		height: 37.5rem;
+		background-color: var(--dark-blue);
+		color: white;
+		margin-top: 2px;
+
+		&.about {
+			background-color: var(--gray-background);
+			color: var(--dark-blue);
+		}
+
+		&__title {
+			width: 53.125rem;
+			font-size: 3.4375em;
+			padding-top: 3.125rem;
+			margin-left: 2.5rem;
+		}
+
+		&__paragraph {
+			width: 37.5rem;
+			font-size: 1.875em;
+			margin-top: 3.125rem;
+			margin-left: 2.5rem;
+
+			&.about {
+				width: 53.125rem;
+			}
+		}
+
+		&__slider {
+			width: 100%;
+			/* max-width: 59.375rem; */
+			height: 100%;
+			position: relative;
+			background-color: var(--dark-blue);
+			overflow: hidden;
+
+			.slide {
+				position: absolute;
+				top: 0;
+				/* left: -4.375rem; */
+				width: 100%;
+				height: 100%;
+				opacity: 0;
+				transition: opacity 1.5s ease;
+
+				&__img {
+					width: 100%;
+					height: 100%;
+					min-height: 37.5rem;
+					object-fit: cover;
+				}
+
+				&.active {
+					opacity: 0.7;
+				}
+			}
+
+			.box {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+
+				&__img {
+					width: 7.5rem;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+	}
+
+	.presentation {
+		width: 100%;
+		padding-bottom: 110px;
+		position: relative;
+		background-color: var(--gray-background);
+		color: var(--dark-blue);
+
+		&__title {
+			font-size: 3.4375em;
+			padding-top: 3.125rem;
+			margin-left: 2.5rem;
+		}
+
+		&__paragraph {
+			font-size: 1.875em;
+			margin-left: 2.5rem;
+			width: 45%;
+			margin-top: 3.125rem;
+		}
+
+		&__btn {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 12.5rem;
+			height: 3.125rem;
+			background-color: var(--blue);
+			border: none;
+			margin-top: 3.4375rem;
+			margin-left: 2.5rem;
+			color: white;
+			text-align: center;
+			&:hover {
+				filter: saturate(160%);
+			}
+
+			&-text {
+				color: white;
+				text-decoration: none;
+				font-family: var(--font-two);
+				font-size: 1.25em;
+			}
+		}
+
+		&__animation {
+			position: absolute;
+			width: 37.5rem;
+			height: 37.5rem;
+			top: 0;
+			right: 2.5rem;
+			opacity: 0.8;
+
+			&-attribute {
+				position: absolute;
+				text-decoration: none;
+				opacity: 0.3;
+				bottom: 3.125rem;
+				left: 6.25rem;
+			}
+		}
+	}
+
+	.services {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 3.125rem;
+		padding-bottom: 6.25rem;
+		&__title {
+			&.regular {
+				font-weight: 400;
+				font-size: 2.6875em;
+			}
+
+			&.bold {
+				font-weight: bold;
+				font-size: 3.4375em;
+			}
+		}
+
+		&__container {
+			width: 100%;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+			gap: 2.5rem;
+			justify-items: center;
+			margin-top: 8.75rem;
+
+			&-box {
+				position: relative;
+				width: 34.375rem;
+				height: 19.375rem;
+				overflow: hidden;
+				box-shadow: 0 10px 12px -7px rgba(2, 10, 56, 0.6);
+
+				&:nth-child(1),
+				&:nth-child(2) {
+					z-index: 4;
+				}
+
+				&:nth-child(3),
+				&:nth-child(4) {
+					z-index: 2;
+				}
+			}
+
+			&-item {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				background-color: var(--blue);
+				width: 100%;
+				height: 100%;
+				text-align: center;
+				color: white;
+				font-size: 1.25em;
+			}
+
+			&-title {
+				width: 100%;
+				height: 3.125rem;
+				margin-top: 0.625rem;
+			}
+
+			&-icon {
+				height: 11.25rem;
+			}
+
+			&-slider {
+				position: absolute;
+				background-color: white;
+				font-size: 1.375em;
+				padding: 1.875rem 1.5rem 2.5rem 1.5rem;
+				top: 0;
+				z-index: -1;
+				transition: all 0.5s ease;
+			}
+
+			&-box:hover {
+				overflow: visible;
+			}
+
+			&-box:hover &-slider {
+				top: 100%;
+				box-shadow: 0 1.25rem 0.8125rem -0.4375rem rgba(2, 10, 56, 0.6);
+			}
+
+			&-btn {
+				background-color: var(--blue);
+				color: white;
+				border-style: none;
+				width: 7.5rem;
+				height: 1.875rem;
+				margin-top: 1.25rem;
+				font-family: var(--font-two);
+				font-size: 0.8em;
+				&:hover {
+					filter: saturate(160%);
+				}
+			}
+		}
+	}
+
+	.videoSection {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 3.125rem;
+		padding-bottom: 6.25rem;
+		background-color: var(--gray-background);
+		color: var(--dark-blue);
+
+		&__title {
+			&.regular {
+				font-weight: 400;
+				font-size: 2.6875em;
+			}
+
+			&.bold {
+				font-weight: bold;
+				font-size: 3.4375em;
+			}
+		}
+
+		&__card {
+			width: 43.75rem;
+			background-color: white;
+			margin-top: 2.5rem;
+		}
+
+		&__video {
+			width: 100%;
+			height: 25rem;
+		}
+
+		&__text {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding-bottom: 1.875rem;
+
+			&-title {
+				width: 19.6875rem;
+				font-size: 1.75em;
+				text-align: center;
+				margin-top: 1.25rem;
+			}
+
+			&-paragraph {
+				width: 87%;
+				font-size: 1.25em;
+				margin-top: 2.5rem;
+			}
+		}
+	}
+}
+
+@include media-down(large_tablet) {
+	.welcome {
+		flex-direction: column;
+		position: relative;
+
+		&.about {
+			color: white;
+		}
+
+		&__section {
+			position: absolute;
+			z-index: 1;
+		}
+
+		.slide {
+			filter: brightness(0.7);
+		}
+
+		.box {
+			display: none;
+		}
+	}
+
+	.presentation {
+		&__animation {
+			width: 33.5rem;
+			height: 33.5rem;
+			top: 30px;
+			right: 0;
+		}
+	}
+
+	.services {
+		&__container {
+			height: 2300px;
+			grid-template-columns: 1fr;
+			grid-template-rows: repeat(4, 1fr);
+
+			&-box {
+				height: fit-content;
+				overflow: visible;
+				box-shadow: none;
+			}
+
+			&-item {
+				height: 250px;
+			}
+
+			&-slider {
+				position: static;
+				box-shadow: 0 1rem 0.8125rem -0.4375rem rgba(2, 10, 56, 0.4);
+			}
+		}
+	}
+}
+
+@include media-down(phone) {
+	.welcome {
+		height: 32rem;
+
+		&.about {
+			height: 35rem;
+		}
+
+		&__title {
+			width: 90%;
+			padding-top: 5rem;
+			font-size: 26px;
+		}
+
+		&__paragraph {
+			width: 90%;
+			font-size: 20px;
+			padding-right: 20px;
+
+			&.about {
+				width: 90%;
+				font-size: 16px;
+			}
+		}
+	}
+
+	.presentation {
+		&__title {
+			font-size: 3.1em;
+			text-align: center;
+			margin-left: 0;
+		}
+
+		&__paragraph {
+			width: 80%;
+			z-index: 1;
+		}
+
+		&__animation {
+			display: none;
+		}
+	}
+
+	.services {
+		/* overflow: hidden; */
+
+		&__title {
+			&.regular {
+				font-size: 2.3em;
+			}
+			&.bold {
+				font-size: 3.1em;
+			}
+		}
+
+		&__container {
+			
+			&-box {
+				width: 90%;
+			}
+
+			&-btn {
+				font-size: 0.8em;
+			}
+		}
+	}
+
+	.videoSection {
+		overflow: hidden;
+
+		&__title {
+			&.regular {
+				font-size: 2.3em;
+			}
+			&.bold {
+				font-size: 3.1em;
+			}
+		}
+
+		&__card {
+			width: 90%;
+		}
+	}
+}

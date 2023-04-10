@@ -1,0 +1,179 @@
+@use '../abstracts/breakpoints' as *;
+
+@include media-down(desktop) {
+	.service {
+		display: flex;
+		justify-content: center;
+		background-color: var(--gray-background);
+		padding-bottom: 5rem;
+	
+		&__title {
+			text-align: center;
+			background-color: var(--gray-background);
+			font-weight: bold;
+			font-size: 4.6875em;
+			padding-top: 3.125rem;
+			padding-bottom: 3.125rem;
+		}
+	
+		&__container {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			width: 65.625rem;
+			height: 55.5rem;
+		}
+	
+		&__photo {
+			position: absolute;
+			width: 47.5rem;
+			height: 27.6875rem;
+			top: 5rem;
+			border: solid .5rem var(--blue);
+			border-radius: .9375rem;
+			z-index: 1;
+	
+			&-img {
+				width: 100%;
+				height: 100%;
+			}
+	
+			&.left {
+				align-self: flex-start;
+			}
+			&.right {
+				align-self: flex-end;
+			}
+		}
+	
+		&__info {
+			position: absolute;
+			background-color: #e7e4e4;
+			background-image: url("/public/assets/services_icons/Engrane_icon.svg");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			width: 47.5rem;
+			height: 30.6875rem;
+			bottom: 0;
+			border: solid .5rem var(--blue);
+			border-radius: .9375rem;
+			z-index: 2;
+	
+			&-title {
+				font-size: 3.125em;
+				margin-top: 5rem;
+				margin-left: 3.125rem;
+			}
+	
+			&-paragraph {
+				font-size: 1.75em;
+				margin-top: 1.25rem;
+				margin-left: 3.125rem;
+				width: 85%;
+			}
+	
+			&.left {
+				align-self: flex-start;
+			}
+			&.right {
+				align-self: flex-end;
+			}
+		}
+	
+		&__container:hover &__photo {
+			animation: card 0.5s linear both;
+			animation-direction: normal;
+		}
+	
+		&.other {
+			background-color: white;
+		}
+	}
+}
+
+@include media-down(large_tablet) {
+	html {
+		font-size: 80%;
+	}
+
+	.service {
+		&__container {
+			width: 52.625rem;
+		}
+	}
+}
+
+@include media-down(phone) {
+	.service {
+		&__title {
+			font-size: 2.8em;
+			margin-top: 1.8rem;
+		}
+
+		&__container {
+			width: 100%;
+			height: 550px;
+			align-items: center;
+			justify-content: center;
+		}
+
+		&__photo {
+			width: 92%;
+			height: 200px;
+			border-radius: 0;
+
+			&-img {
+				object-fit: cover;
+			}
+
+			&.left {
+				align-self: inherit;
+			}
+			&.right {
+				align-self: inherit;
+			}
+		}
+
+		&__info {
+			width: 92%;
+			height: 300px;
+			border-radius: 0;
+
+			&-title {
+				margin-top: 2rem;
+				margin-left: 1.8rem;
+				font-size: 1.8rem;
+			}
+
+			&-paragraph {
+				margin-left: 1.8rem;
+				font-size: 1.2rem;
+			}
+
+			&.left {
+				align-self: inherit;
+			}
+			&.right {
+				align-self: inherit;
+			}
+		}
+
+		&__container:hover &__photo {
+			animation: none;
+		}
+	}
+}
+
+@keyframes card {
+	0% {
+		top: 80px;
+	}
+	50% {
+		top: -40px;
+	}
+	100% {
+		top: 55px;
+		z-index: 2;
+	}
+}
