@@ -67,6 +67,10 @@ p {
     font-size: 2.375em;
     margin-left: 40px;
   }
+  .header .main__link {
+    color: white;
+    text-decoration: none;
+  }
   .header .main__btn {
     display: none;
   }

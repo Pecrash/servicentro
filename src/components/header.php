@@ -30,7 +30,9 @@
     </section>
     <header class="header">
         <section class="main">
-            <h1 class="main__title">SERVICENTRO</h1>
+            <a class="main__link" href="/index.php">
+                <h1 class="main__title">SERVICENTRO</h1>
+            </a>
             <button class="main__btn" id="menuBtn"></button>
             <nav class="nav" id="nav">
                 <ul class="nav__content">
@@ -44,11 +46,12 @@
                         <a class="nav__content-link" href="/src/layout/services.php">Servicios</a>
                     </li>
                     <li class="nav__content-item">
-                        <a class="nav__content-link important" href="https://wa.link/veusjd" target="_blank">Contáctanos</a>
+                        <a class="nav__content-link important" href="https://wa.link/veusjd"
+                            target="_blank">Contáctanos</a>
                     </li>
                 </ul>
             </nav>
         </section>
-        <a href="https://wa.link/veusjd" target="_blank" class="whatsapp_btn"><img class="whatsapp_btn-icon" src="../../public/assets/WhatsApp.svg"
-                alt=""></a>
+        <a href="https://wa.link/veusjd" target="_blank" class="whatsapp_btn"><img class="whatsapp_btn-icon"
+                src="../../public/assets/WhatsApp.svg" alt=""></a>
     </header>

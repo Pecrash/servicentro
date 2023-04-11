@@ -20,7 +20,7 @@
     </div>
 
     <div class="presentation">
-        <h1 class="presentation__title">¿Quienes somos?</h1>
+        <h1 class="presentation__title">¿Quiénes somos?</h1>
         <p class="presentation__paragraph">Somos un taller automotriz dedicado a brindar soluciones efectivas y
             personalizadas para todos nuestros clientes. Desde nuestros inicios, hemos estado comprometidos con la
             satisfacción de nuestros clientes y con la calidad de nuestro trabajo.

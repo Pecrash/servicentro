@@ -3,7 +3,7 @@
 <main>
     <div class="welcome about">
         <section class="welcome__section about">
-            <h1 class="welcome__title about">¿Quienes somos?</h1>
+            <h1 class="welcome__title about">¿Quiénes somos?</h1>
             <p class="welcome__paragraph about">Somos un taller automotriz dedicado a brindar soluciones efectivas y
                 personalizadas para todos nuestros clientes. Desde nuestros inicios, hemos estado comprometidos con la
                 satisfacción de nuestros clientes y con la calidad de nuestro trabajo. Nos esforzamos por ofrecer un
