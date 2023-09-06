@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://servicentrosuroeste.com/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://servicentrosuroeste.com/public/assets/services_imgs/afinacionMotor.jpg</image:loc>
+      <image:caption>Afinación y reparación del motor para automóviles o carros</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://servicentrosuroeste.com/public/assets/services_imgs/pintura.jpg</image:loc>
+      <image:caption>Servicio de latonería y pintura para automóviles o carros</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://servicentrosuroeste.com/public/assets/services_imgs/lavado.jpg</image:loc>
+      <image:caption>Servicio de lavado para automóviles o carros</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://servicentrosuroeste.com/public/assets/services_imgs/soldadura.jpg</image:loc>
+      <image:caption>Servicio de soldadura en MIG y TIG</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://servicentrosuroeste.com/public/assets/services_imgs/alineacion.jpg</image:loc>
+      <image:caption>Servicio de alineación y balanceo en el suroeste antioqueño</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://servicentrosuroeste.com/servicios</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://servicentrosuroeste.com/nosotros</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

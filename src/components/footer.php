@@ -1,10 +1,10 @@
 <footer class="footer">
     <div class="footer__nav">
         <h3 class="footer__nav-title">Navegación</h3>
-        <a href="" class="footer__nav-link">Inicio</a>
-        <a href="" class="footer__nav-link">Nosotros</a>
-        <a href="" class="footer__nav-link">Servicios</a>
-        <a href="" class="footer__nav-link">Contáctanos</a>
+        <a href="/" class="footer__nav-link">Inicio</a>
+        <a href="/nosotros" class="footer__nav-link">Nosotros</a>
+        <a href="/servicios" class="footer__nav-link">Servicios</a>
+        <a href="https://wa.link/veusjd" class="footer__nav-link">Contáctanos</a>
     </div>
     <div class="footer__location">
         <h3 class="footer__location-title">Ubicación</h3>
@@ -19,7 +19,7 @@
     <div class="footer__contact">
         <h3 class="footer__contact-title">Contacto</h3>
         <p class="footer__contact-number">(57) 305 920 1709</p>
-        <p class="footer__contact-email">uncorreo@gmail.com</p>
+        <p class="footer__contact-email">contact@servicentrosuroeste.com</p>
     </div>
 </footer>
 

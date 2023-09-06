@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+
+    RewriteEngine On
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Redirección para eliminar "www" duplicado
+    RewriteCond %{HTTP_HOST} ^www\.servicentrosuroeste\.com$ [NC]
+    RewriteRule ^(.*)$ https://servicentrosuroeste.com/$1 [R=301]
+    
+    # Redirección a urls amigables
+    redirect 301 ^(src/layout/about.php)$ https://servicentrosuroeste.com/nosotros
+    redirect 301 ^(src/layout/services.php)$ https://servicentrosuroeste.com/servicios
+
+    # Urls amigables
+    RewriteRule ^(servicios)$ /src/layout/services.php
+    RewriteRule ^(nosotros)$ /src/layout/about.php
+
+</IfModule>
+

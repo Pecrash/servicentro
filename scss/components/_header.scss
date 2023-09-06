@@ -70,6 +70,9 @@
 						&.important {
 							color: #629be3;
 						}
+						&:hover {
+							color: #b2d2f9;
+						}
 					}
 				}
 			}
@@ -128,9 +131,12 @@
 			height: auto;
 			padding: 0;
 
+			&__link {
+				align-self: flex-start;
+			}
+
 			&__title {
 				width: 220px;
-				align-self: flex-start;
 				height: 3.5rem;
 				padding-top: 0.625rem;
 				font-size: 1.8em;
